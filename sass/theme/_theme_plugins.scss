@@ -1,0 +1,783 @@
+/* Gravity Forms */
+body {
+	.gform_wrapper {
+		margin: 0;
+		
+		input:-internal-autofill-selected {
+			background-color: white !important;
+		}
+		form {
+			margin-bottom: 0;
+		}
+		ul {
+			@extend .list-unstyled;
+			
+			li {
+				@extend .form-group;
+				
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+		.gform_title {
+			margin-bottom: 1em;
+		}
+		.gfield_label {
+			text-transform: uppercase;
+			font-weight: bold;
+			
+		}
+		.ginput_complex {
+			label {
+				font-size: .7rem;
+				line-height: $line-height-sm;
+				text-transform: uppercase;
+			}
+		}
+		.ginput_container_textarea {
+			.ginput_counter {
+				font-size: .7rem;
+				line-height: $line-height-sm;
+				text-transform: uppercase;
+			}
+		}
+		.form-group .gfield_description {
+			font-size: $font-size-base;
+			line-height: $line-height-sm;
+			margin-bottom: .5rem;
+		}
+		.gfield_required {
+			padding-left: 1px;
+			color: $danger;
+		}
+		.gform_footer {
+			padding-bottom: 0;
+			
+			input.button {
+			 margin-bottom: 0;
+			}
+		}
+		.StripeElement, input[type="email"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="week"], input[type="url"] {
+			@extend .form-control;
+			@extend .form-control-lg;
+			width: 100%;
+		}
+		.ginput_container_name {
+			@extend .row;
+			
+			span {
+				@extend .col-6;
+			}
+		}
+		.StripeElement {
+			padding-top: 13px;
+		}
+		.gfield_error {
+			input, select, textarea {
+				border-color: $danger;
+			}
+			.custom-checkbox {
+				.validation_message {
+					display: block;
+					color: $danger;
+					font-weight: bold;
+					margin-left: -5px;
+				}
+			}
+		}
+		.hidden_label .gfield_label, .hidden_label .custom_control > .custom_control_label, .gform_validation_container {
+			display: none;
+		}
+		.validation_error, .gfield_description.validation_message {
+			@extend .alert;
+			@extend .alert-danger;
+			font-size: $font-size-sm;
+		}
+		.gfield_description.validation_message {
+			margin-bottom: 0;
+		}
+		.validation_error {
+			background-color: white;
+			margin-bottom: 0;
+			border: 0;
+			border-radius: 0;
+			padding: .5em 1.25em 0 1.25em;
+			border-left: 1px solid #dfdfd7;
+			border-right: 1px solid #dfdfd7;
+		}
+		.gfield_error {
+			.ginput_container_email, .ginput_container_password, .ginput_container_text, .ginput_container_select, .ginput_container_date {
+				padding-bottom: .5em;
+			}
+			.input-group-text {
+				@extend .border-danger;
+				@extend .bg-danger;
+				color: white;
+			}
+		}
+		input[type="text"].ginput_amount {
+		    color: $blue;
+		    font-size: 24px;
+		}
+		.ginput_container_creditcard {
+			.validation_message {
+				display: none;
+			}
+		}
+		.StripeElement--invalid {
+			border-color: $danger;
+		}
+		.gfield_error {
+			&.input-group .validation_message {
+				margin-top: .5em;	
+				width: 100%;
+			}
+		}	
+		.instruction.validation_message {
+			font-size: $font-size-sm;
+			font-weight: bold;
+		}
+		.small {
+			.form-check label {
+				font-size: $font-size-sm;
+			}
+		}
+		.strong {
+			.form-check label {
+				font-weight: bold;
+			}
+		}
+		.custom-control {
+			padding-left: 0;
+			
+			.ginput_container_checkbox {
+				padding-left: 5px;
+			}
+		}
+		.custom-select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			border-radius: .3rem;
+			&:focus {
+				box-shadow: none;
+				border-color: $gray-400;
+			}
+		}
+		.custom-select-lg {
+			padding-left: 1em;
+		}
+		.form-check {
+			margin-bottom: .3em;
+			
+			&:last-child {
+				margin-bottom: 1em;
+			}
+			label {
+				@extend .custom-control-label;
+			}
+		}
+		.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child), .input-group .ginput_amount {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-top-right-radius: .3rem;
+			border-bottom-right-radius: .3rem;
+		}
+		.address_country select, .address_state select {
+			@extend .custom-select;
+			@extend .custom-select-lg;
+		}
+		.gfield_date_dropdown_day, .gfield_date_dropdown_month, .gfield_date_dropdown_year {
+			margin-right: 6px;
+			vertical-align: top;
+			display: -moz-inline-stack;
+			display: inline-block;
+			
+			select {
+				@extend .custom-select;
+				@extend .custom-select-lg;
+			}
+		}
+		.postinput {
+			position: absolute;
+			top: 54%;
+			right: 5%;
+			z-index: 2;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			color: $body-color;
+			font-size: 18px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+		.monthly {
+			margin-bottom: 0;
+		}
+		.form-check label {
+			font-weight: bold;
+			font-size: $font-size-base;
+			line-height: 1.375;
+			
+			&:before {
+				top: 0;
+			}
+		}
+		.gfield_html {
+/*
+			font-size: $font-size-base;
+			padding: .6em;
+			background-color: $dark;
+			position: relative;
+			color: white;
+			
+			&:before {
+				content: " ";
+				border-style: solid;
+				border-width: 15px 10px 10px 10px;
+				border-color: transparent transparent $dark transparent;
+				position: absolute;
+				top: -24px
+			}
+*/
+			hr {
+				height: 5px;
+				margin: 2em 0;
+			}
+		}
+		.gfield_calculation {
+			margin-top: -.5rem;
+		}
+
+	}
+	.gform_heading {
+		@extend .h4;
+	}
+	.gsection_title {
+		@extend h3;
+		margin: 2em 0 1em;
+		border-bottom: 4px solid $gray-500;
+		padding-bottom: .5rem;
+	}
+	.bg-secondary {
+		.gsection_title {
+			color: $body-color;
+			border-bottom-color: $gray-500;
+		}
+	}
+	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit] {
+		@extend .btn;
+		@extend .btn-primary;
+	}
+	.gfield_creditcard_warning_message {
+		@extend .alert;
+		background-color: $danger;
+		color: white;
+	}
+	.ginput_container_select {
+		outline: none;
+	}
+	
+	/* Form Sizes */
+	.form-sm {
+		.gform_title {
+			text-align: center;
+		}
+		button {
+			@extend .btn-block;
+			@extend .btn-secondary;
+		}
+	}
+	/* Spinner */
+	.gform_ajax_spinner {
+		margin-left: 20px;
+		border: 4px solid rgba(255, 255, 255, 0.3);
+		border-left: 4px solid rgba(15, 113, 182, 0.7);
+		animation: spinner 1.1s infinite linear;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+	}
+	@keyframes spinner {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	.form-control::-webkit-input-placeholder {
+		color: #bbb;
+	}
+	.processing-fee {
+		margin: 0 !important;
+		height: 0 !important;
+		.ginput_container_product_calculation {
+			display: none;
+		}
+	}
+	.radio-buttons {
+		.gfield_radio {
+			display: flex;
+			@extend .clearfix;
+			input[type=text] {
+				border:none;
+			}
+			li {
+				@extend .flex-fill;
+				margin: 0 10px 5px 0;
+				height: 60px;
+				position: relative;
+				background-color: white;
+				overflow: hidden;
+				
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			@media(max-width: 767px) {
+				li {
+					width: 100%;
+				}
+				
+			}
+			label, input {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				transition: all .3s ease-in-out;
+			}
+			input[type="radio"] {
+				opacity: 0.011;
+				z-index: 100;
+			}
+			input[type="radio"]:checked + label {
+				background: $primary;
+				color: white;
+				
+				&:before {
+					font-family: "fontawesome";
+				    color: white;
+				    content: "\f00c";
+				    position: absolute;
+				    left: 10%;
+				    top: 35%;
+				}
+			}
+			label {
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 1.2em;
+				padding: 0px;
+				border: none; 
+				cursor: pointer;
+			    z-index: 90;
+			    height: 100%;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    text-align: center;
+			}
+			label:hover {
+				background-color: $primary;
+				color: white;
+			}
+		}
+	}
+	.gform_fields {
+		.gsection:first-child {
+			h2 {
+				margin-top: 1em;
+			}
+		}
+	}
+}
+.bg-light {
+	.gform_wrapper {
+		.validation_error {
+			background-color: #f8d7da;
+			padding: .75rem 1.25rem;
+			border-radius: .25rem;
+			border: 1px solid #f5c6cb;
+		}
+	}
+}
+
+/* Spinner */
+.gform_ajax_spinner {
+	position: fixed;
+	margin-left: 20px;
+	border: 4px solid rgba(255, 255, 255, 0.3);
+	border-left: 4px solid rgba(110, 73, 217, 0.7);
+	animation: spinner 1.1s infinite linear;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* Shiftnav */
+body {
+	.shiftnav {
+		&:after {
+			display: none;
+		}
+		.shiftnav-panel-close {
+			position: inherit;
+			text-align: right;
+			width: 100%;
+			margin-bottom: 1em;
+			
+			.fa {
+				color: white;
+			}
+		}
+		ul.shiftnav-menu  {
+			a {
+				background-color: $primary;
+			}
+			li.menu-item {
+				padding-right: 10px;
+				
+				&:hover {
+					background-color: white;
+				}
+			}
+			li.menu-item>.shiftnav-target {
+				padding: 5px 15px;
+				
+				&:hover {
+					background-color: $primary;
+					
+				}
+			}
+		}
+		
+	}
+	.shiftnav-inner {
+		background-color: $primary;
+		
+		a {
+			color: white;
+		}
+	}
+	.shiftnav-toggle-button {
+		@extend .btn;
+		@extend .btn-primary;
+		
+		&:hover {
+			padding: $input-btn-padding-y $input-btn-padding-x;
+			
+		}
+	}
+}
+
+/* Event Calendar */
+body .site {
+	.btn-tribe {
+		@extend .btn;
+		@extend .btn-primary;
+		border: none;
+	}
+	.btn-tribe-white {
+		background-color: white;
+		color:$primary;
+		
+		&:hover, &:active {
+			color: $primary !important;
+			background-color: darken(white, 5) !important;
+		}
+	}
+	.tribe-events-calendar-list__event.tribe-common-g-row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.tribe-events-calendar-list__event-wrapper {
+		background-color: $light;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__month-separator+.tribe-events-calendar-list__event-row {
+		margin-top: 1em;
+	}
+	.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-row:last-child {
+		margin-bottom: 0;
+	}
+	.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+		padding: 0;
+		max-width: 100%;
+	}
+	#tribe-events-pg-template, .tribe-events-pg-template {
+		margin: 0;
+		max-width: 100%;
+	}
+	#tribe-events-content {
+		background-color: white;
+		padding: 0;
+	}
+	.tribe-events-c-top-bar__datepicker-container .datepicker {
+		left: -340px !important;
+	}
+	.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-details {
+		width: 100%;
+	}
+	.tribe-events {
+		.container {
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;	
+		}
+		.tribe-events-calendar-list-nav {
+			@extend .container;
+			padding-top: 2em;
+			border: none;
+		}
+		.tribe-events-c-ical {
+			@extend .container;
+			padding-bottom: 2em;
+		}
+		.tribe-events-c-top-bar__datepicker-button:after {
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			content: '\f073';
+			color: $secondary;
+			background-image: none;
+			position: absolute;
+			top: -20px;
+		}
+		.tribe-events-c-messages__message--notice:before {
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			content: '\f272';
+			color: $secondary;
+			background-image: none;
+			font-size: 1.4em;
+			margin-top: -10px;
+			height: 30px;
+		}
+		.tribe-events-c-top-bar__datepicker-mobile {
+			display: none;
+		}
+		.tribe-events-header__top-bar {
+			margin-bottom: 0;
+		}
+		.tribe-events-l-container {
+			
+			.tribe-events-c-events-bar__views {
+				display: none;
+			}
+			
+			.tribe-events-calendar-list__event-date-tag-weekday, .tribe-events-calendar-list__event-date-tag-daynum {
+				background-color: $secondary;
+				color: white;
+			}
+			.tribe-events-calendar-list__event-date-tag-weekday {
+				padding-top: 1em;
+			}
+			.tribe-events-calendar-list__event-date-tag-daynum {
+				padding-bottom: .5em;
+			}
+			.tribe-events-calendar-list__event-title a, .tribe-events-calendar-list__event-title a:active, .tribe-events-calendar-list__event-title a:focus, .tribe-events-calendar-list__event-title a:hover, .tribe-events-calendar-list__event-title a:visited {
+				color: $secondary;
+				text-decoration: none;
+				border: none;
+			}
+		}
+		#tribe-events-content {
+			background-color: white;
+			margin: 4em auto;
+			padding-top: 2em;
+			padding-bottom: 2em;
+			min-height: 400px;	
+		}
+		.tribe-events-c-ical__link {
+			@extend .btn;
+			@extend .btn-primary;
+			@extend .btn-sm;
+		}
+		.tribe-events-c-ical__link:before {
+			display: none;
+		}
+	}
+	.tribe-common--breakpoint-full.tribe-events .tribe-events-c-top-bar__datepicker-desktop {
+		display: none !important;
+	}	
+	.tribe-events-single-event-title {
+		@extend h2;
+		color: $secondary;
+	}
+	.tribe-events-back {
+		padding: 0;
+		margin-bottom: 1em;
+	}
+	.tribe-events-schedule h2 {
+		font-size: 17px;
+		font-weight: 700;
+		color: $body-color;
+	}
+	#tribe-events-pg-template .tribe-events-content h1, .tribe-events-after-html h1, .tribe-events-before-html h1 {
+		@extend h1;
+		margin-top: 0;
+		margin-bottom: 3em;
+	}
+	#tribe-events-content {
+		margin-bottom: 0;
+	}
+}
+.single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-gcal:hover, .single-tribe_events a.tribe-events-ical, .single-tribe_events a.tribe-events-ical:hover {
+	@extend .btn;
+	@extend .btn-white;
+	@extend .btn-sm;
+}
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-b2 {
+	font-size: 17px;
+	font-weight: 500;
+}
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h4--min-medium {
+	@extend h3;
+}
+.single-tribe_events #tribe-events-content .tribe-events-event-meta .tribe-venue, .single-tribe_events #tribe-events-content .tribe-events-event-meta .tribe-organizer {
+	font-weight: bold;
+}
+.tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {
+	font-style: normal;
+}
+.single-tribe_events .tribe-events-cal-links {
+	margin-bottom: 0;
+}
+.single-tribe_events #tribe-events-footer {
+	border: none;
+	padding: 0;
+}
+.tribe-events .datepicker .day.active, .tribe-events .datepicker .day.active.focused, .tribe-events .datepicker .day.active:focus, .tribe-events .datepicker .day.active:hover, .tribe-events .datepicker .month.active, .tribe-events .datepicker .month.active.focused, .tribe-events .datepicker .month.active:focus, .tribe-events .datepicker .month.active:hover, .tribe-events .datepicker .year.active, .tribe-events .datepicker .year.active.focused, .tribe-events .datepicker .year.active:focus, .tribe-events .datepicker .year.active:hover {
+	background: $primary;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-header__events-bar {
+	margin: 0;
+}
+.tribe-common .tribe-common-c-btn, .tribe-common a.tribe-common-c-btn {
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .btn-sm;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__button {
+	margin-right: 1em;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-row {
+	margin: 48px 0 40px;
+}
+.tribe-events-calendar-list__event-date-tag {
+	display: none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-featured-image-wrapper {
+	margin-bottom: 1em;
+}
+.tribe-common .tribe-common-anchor-thin:active, .tribe-common .tribe-common-anchor-thin:focus, .tribe-common .tribe-common-anchor-thin:hover {
+	color: $primary;
+}
+.tribe-common .tribe-common-anchor-thin, .tribe-common .tribe-common-anchor-thin:active, .tribe-common .tribe-common-anchor-thin:focus, .tribe-common .tribe-common-anchor-thin:hover {
+	border: none;
+}
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-h6--min-medium {
+	@extend h4;
+}
+.tribe-common .tribe-common-h6, .tribe-common .tribe-common-h7 {
+	@extend h4;
+}
+.tribe-common .tribe-common-b2 {
+	font-size: $font-size-sm;
+	font-weight: bold;
+}
+.single-tribe_events #tribe-events-pg-template .tribe-events-single-event-description h2 {
+	@extend h2;
+}
+.tribe-events-schedule {
+	display: none;
+}
+@include media-breakpoint-down(lg) {
+	body {
+		.site{
+			#tribe-events-pg-template.tribe-events-pg-template {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(sm) {
+	body {
+		.site{
+			.tribe-events {
+				.tribe-events-c-events-bar__search-filters-container {
+					top: calc(100% + 16px);
+					margin-left: -15px;
+					margin-right: -15px;
+					border-bottom: 5px solid $primary;
+				}
+				.tribe-events-l-container {
+					padding: 0;
+				}
+				.tribe-events-calendar-list {
+					padding-top: 2em;
+				}
+				.tribe-common-h6 {
+					font-size: 20px;
+					line-height: 1.3;
+				}
+				.tribe-events-calendar-list__event-date-tag {
+					margin-right: 1em;
+				}
+				.tribe-events-c-ical {
+					text-align: center;
+				}
+				.tribe-events-c-ical__link  {
+					display: inline-block;
+					margin: auto;
+					width: auto;
+				}		
+			}
+			#btn-event {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* SearchWP */
+h3 {
+	.searchwp-highlight {
+		background-color: transparent;
+		padding: 0;
+		color: $primary;
+	}
+}
+/* Adoption */
+#sort_by_name, .animal-be-result {
+	display: none;
+}
+.adoptable-animal {
+	margin-right: 0;
+	@extend .col-xl-2;
+	@extend .col-md-3;
+	@extend .col-6;
+	.animal-name {
+		display: block;
+	}
+	
+	@include media-breakpoint-down(md) {
+	
+			height: auto;
+		
+	}
+}
