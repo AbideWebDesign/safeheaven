@@ -74,6 +74,7 @@ a:hover {
 .btn, button {
 	text-transform: uppercase;
 	font-weight: bold;
+	border-width: 2px;
 	
 	&:focus, &.active:focus {
 		outline: none !important;
@@ -95,6 +96,18 @@ a:hover {
 	&:hover {
 		background-color: darken(white, 10);
 	}
+	&.btn-outline {
+		border: 2px solid white;
+		color: white;
+		
+		&:hover {
+			color: $secondary;
+			border-color: darken(white, 10);
+		}
+	}
+}
+.btn-outline {
+	background-color: transparent;
 }
 a.arrow {
 	display: block;
@@ -430,6 +443,9 @@ hr {
 
 /* Footer */
 .wrapper-footer-top {
+	.gform_confirmation_message_3 {
+		color: white;
+	}
 	.gform_wrapper {
 		margin: 0;
 		
@@ -483,9 +499,6 @@ hr {
 				border-radius: 0;
 				white-space: nowrap;
 			}	
-		}
-		.gform_confirmation_message_3 {
-			color: white;
 		}
 	}
 	@include media-breakpoint-down(lg) {
@@ -607,9 +620,6 @@ hr {
 .btn-wrapper {
 	.btn-wrap:not(:last-child) {
 		margin-right: 2em;
-	}
-	.btn-white {
-		color: $secondary;
 	}
 }
 /* Form */

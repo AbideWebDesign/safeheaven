@@ -18,7 +18,7 @@
 					
 						<div class="btn-wrap">
 							
-							<a href="<?php the_field('donation_page'); ?>?designation=<?php the_field('designation'); ?>&amount=$<?php the_sub_field('donation_amount'); ?><?php echo ( get_sub_field('donation_recurring') ? '&recurring=recurring' : '&recurring=onetime'); ?>" class="btn btn-lg <?php echo ( get_sub_field('primary_button') ? 'btn-primary' : 'btn-white' ); ?>">$<?php the_sub_field('donation_amount'); ?><?php echo ( get_sub_field('donation_recurring') ? '<span class="text-sm">/month</span>' : '' ); ?></a>
+							<a href="<?php the_field('donation_page'); ?>?designation=<?php the_field('designation'); ?>&amount=$<?php the_sub_field('donation_amount'); ?><?php echo ( get_sub_field('donation_recurring') ? '&recurring=recurring' : '&recurring=onetime'); ?>" class="btn btn-lg <?php echo ( get_sub_field('primary_button') ? 'btn-primary' : 'btn-white btn-outline' ); ?>">$<?php the_sub_field('donation_amount'); ?><?php echo ( get_sub_field('donation_recurring') ? '<span class="text-sm">/month</span>' : '' ); ?></a>
 							
 						</div> 
 					
@@ -28,7 +28,7 @@
 					
 						<div class="btn-wrap">
 						
-							<a href="<?php the_field('donation_page'); ?>?designation=<?php the_field('designation'); ?>&amount=Other&recurring=onetime" class="btn btn-lg btn-white">Other</a>
+							<a href="<?php the_field('donation_page'); ?>?designation=<?php the_field('designation'); ?>&amount=Other&recurring=onetime" class="btn btn-lg btn-white btn-outline">Other</a>
 						
 						</div>
 					
