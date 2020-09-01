@@ -256,7 +256,7 @@ defined( 'ABSPATH' ) || exit;
 		
 				<div class="d-flex">
 					
-					<div class="text-xs text-mb-0 text-light pr-2 mr-2 border-right">Copyright <?php echo date('Y'); ?></div>
+					<div class="text-xs text-mb-0 text-light pr-2 mr-2 border-right">© <?php echo date('Y'); ?></div>
 					
 					<div class="text-xs text-mb-0 text-light pr-2 mr-2 border-right"><a href="<?php the_field('footer_bottom_privacy', 'options'); ?>">Privacy Policy</a></div>
 					
