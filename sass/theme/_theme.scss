@@ -530,6 +530,9 @@ hr {
 	}
 }
 .wrapper-footer-credits {
+	a {
+		text-decoration: none;
+	}
 	@include media-breakpoint-down(sm) {
 		.border-right {
 			border: none !important;
