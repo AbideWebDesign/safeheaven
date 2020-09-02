@@ -45,7 +45,7 @@ if ( empty( $disable_event_search ) ) {
 			
 			<div class="col-xl-8">
 		
-				<h1 class="mb-4">SafeHaven Events</h1>
+				<h1 class="mb-4"><?php the_field('events_title', 'options'); ?></h1>
 				
 				<?php the_field('events_text', 'options'); ?>
 				
