@@ -24,6 +24,8 @@ global $post;
 		<?php get_template_part( 'loop-templates/content', 'page' ); ?>
 
 	<?php endwhile; // end of the loop. ?>
+	
+	<?php echo get_template_part('template-parts/blocks/content', 'adoption-embed'); ?>
 
 </div><!-- #page-wrapper -->
 

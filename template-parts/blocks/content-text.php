@@ -230,20 +230,6 @@
 		
 		<?php endif; ?>
 		
-		<?php if ( is_page('dogs') || is_page('cats') || is_page('small-animals') || is_page('stary-animals') ): ?>
-		
-			<div class="row justify-content-center">
-				
-				<div class="col">
-				
-					<?php echo get_template_part('template-parts/blocks/content', 'adoption-embed'); ?>
-					
-				</div>
-				
-			</div>
-		
-		<?php endif; ?>
-		
 	</div>
 	
 </div>

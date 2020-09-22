@@ -247,10 +247,7 @@ hr {
 	a {
 		padding: 10px 24px;
 		font-size: $font-size-lg;
-		
-		&:hover {
-// 			color: $primary;
-		}
+		font-weight: bold;
 	}
 }
 .call-out-button {
