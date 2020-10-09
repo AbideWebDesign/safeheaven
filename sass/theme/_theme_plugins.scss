@@ -770,6 +770,7 @@ h3 {
 	@extend .col-6;
 	.animal-name {
 		display: block;
+		font-weight: bold;
 	}
 	
 	@include media-breakpoint-down(md) {

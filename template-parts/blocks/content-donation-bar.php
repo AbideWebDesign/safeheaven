@@ -14,6 +14,27 @@
 				
 				<div class="btn-wrapper d-none d-lg-flex">
 					
+					<div class="btn-wrap">
+						
+						<?php $link = get_field('donation_page'); ?>
+						
+						<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-lg btn-primary"><?php echo $link['title']; ?></a>
+						
+					</div>
+					
+					<?php if ( get_field('learn_more_page') ): ?>
+						
+						<?php $link = get_field('learn_more_page'); ?>
+						
+						<div class="btn-wrap">
+							
+							<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-lg btn-white btn-outline"><?php echo $link['title']; ?></a>
+							
+						</div>
+						
+					<?php endif; ?>
+					
+<!--
 					<?php while ( have_rows( 'buttons') ): the_row(); ?>
 					
 						<div class="btn-wrap">
@@ -33,7 +54,7 @@
 						</div>
 					
 					<?php endif; ?>
-					
+-->
 				</div>
 				
 				<div class="d-lg-none text-center text-md-left">
