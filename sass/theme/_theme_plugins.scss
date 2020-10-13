@@ -36,6 +36,9 @@ body {
 			}
 		}
 		.ginput_container_textarea {
+			.textarea {
+				@extend .form-control;
+			}
 			.ginput_counter {
 				font-size: .7rem;
 				line-height: $line-height-sm;

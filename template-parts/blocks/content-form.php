@@ -1,6 +1,6 @@
 <?php if ( get_field('form_type') == 'Default' ): ?>
 	
-	<div class="wrapper-form-top wrapper-sm <?php the_field('background_color'); ?> text-center">
+	<div class="wrapper-form-top wrapper <?php the_field('background_color'); ?> text-center">
 		
 		<div class="container">
 			
@@ -8,11 +8,11 @@
 				
 				<div class="col-xl-8">
 					
-					<h1 class="mb-4"><?php the_field('form_title'); ?></h1>
+					<h1 class="mb-0"><?php the_field('form_title'); ?></h1>
 					
 					<?php if ( get_field('form_text') ): ?>
 					
-						<div class="lead"><?php the_field('form_text'); ?></div>
+						<div class="lead mt-4"><?php the_field('form_text'); ?></div>
 					
 					<?php endif; ?>
 					
