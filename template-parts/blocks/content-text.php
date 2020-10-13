@@ -20,6 +20,18 @@
 						
 							<?php the_field('text_content'); ?>
 							
+							<?php if ( get_field('include_text_content_button') ): ?>
+							
+								<?php $link = get_field('text_content_button'); ?>
+								
+								<div class="mt-3">
+									
+									<a class="btn btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+									
+								</div>
+							
+							<?php endif; ?>
+							
 						</div>
 						
 					</div>
@@ -65,6 +77,18 @@
 						<div class="<?php echo ( get_field('text_content_lead') ? 'lead' : '' ); ?>">
 						
 							<?php the_field('text_content'); ?>
+							
+							<?php if ( get_field('include_text_content_button') ): ?>
+							
+								<?php $link = get_field('text_content_button'); ?>
+								
+								<div class="mt-3">
+									
+									<a class="btn btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+									
+								</div>
+							
+							<?php endif; ?>
 							
 						</div>
 						
@@ -124,6 +148,18 @@
 						
 							<?php the_field('text_content'); ?>
 							
+							<?php if ( get_field('include_text_content_button') ): ?>
+							
+								<?php $link = get_field('text_content_button'); ?>
+								
+								<div class="mt-3">
+									
+									<a class="btn btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+									
+								</div>
+							
+							<?php endif; ?>
+							
 						</div>
 						
 					</div>
@@ -163,6 +199,18 @@
 						<div class="<?php echo ( get_field('text_content_lead') ? 'lead' : '' ); ?>">
 						
 							<?php the_field('text_content'); ?>
+							
+							<?php if ( get_field('include_text_content_button') ): ?>
+							
+								<?php $link = get_field('text_content_button'); ?>
+								
+								<div class="mt-3">
+									
+									<a class="btn btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+									
+								</div>
+							
+							<?php endif; ?>
 							
 						</div>
 						
@@ -221,6 +269,18 @@
 					<div class="<?php echo ( get_field('text_content_lead') ? 'lead text-center' : '' ); ?>">
 					
 						<?php the_field('text_content'); ?>
+						
+						<?php if ( get_field('include_text_content_button') ): ?>
+							
+							<?php $link = get_field('text_content_button'); ?>
+							
+							<div class="mt-3">
+								
+								<a class="btn btn-primary" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+								
+							</div>
+						
+						<?php endif; ?>
 						
 					</div>
 					

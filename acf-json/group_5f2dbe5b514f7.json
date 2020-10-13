@@ -94,15 +94,38 @@
             "delay": 0
         },
         {
-            "key": "field_5f2dca5f43785",
-            "label": "Lead Text",
-            "name": "text_content_lead",
-            "type": "true_false",
+            "key": "field_5f85d8506361c",
+            "label": "Content Button",
+            "name": "text_content_button",
+            "type": "link",
             "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f85d77c83c03",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5f85d77c83c03",
+            "label": "Include Content Button",
+            "name": "include_text_content_button",
+            "type": "true_false",
+            "instructions": "Add a button to display below text.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -121,7 +144,26 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f2dca5f43785",
+            "label": "Lead Text",
+            "name": "text_content_lead",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -577,5 +619,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1599073853
+    "modified": 1602607404
 }
