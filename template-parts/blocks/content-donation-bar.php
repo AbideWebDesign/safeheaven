@@ -4,13 +4,13 @@
 		
 		<div class="row justify-content-center">
 			
-			<div class="col-auto col-md-12 col-xl-auto align-self-center text-center text-md-center text-xl-right mb-4 mb-xl-0">
+			<div class="col-md-12 col-xl-auto align-self-center text-center text-md-center text-xl-right mb-4 mb-xl-0">
 				
 				<h2 class="mb-0 text-white alt"><?php the_field('donation_text'); ?></h2>
 				
 			</div>
 			
-			<div class="col-auto align-self-center">
+			<div class="col-12 col-lg-auto align-self-center">
 				
 				<div class="btn-wrapper d-none d-lg-flex">
 					
@@ -57,9 +57,11 @@
 -->
 				</div>
 				
-				<div class="d-lg-none text-center text-md-left">
+				<div class="d-lg-none text-center text-lg-left w-100">
 					
-					<a href="<?php the_field('donation_page'); ?>" class="btn btn-lg btn-white"><?php the_field('mobile_button_label'); ?></a>
+					<?php $link = get_field('donation_page'); ?>
+											
+					<a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>" class="btn btn-lg btn-white"><?php the_field('mobile_button_label'); ?></a>
 					
 				</div>
 				
