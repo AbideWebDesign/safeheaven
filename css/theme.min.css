@@ -4415,7 +4415,7 @@ hr { border-top-width: 2px; }
 .hero-banner-single .bg-img-content { position: relative; }
 
 /* Donation Bar */
-.btn-wrapper .btn-wrap:not(:last-child) { margin-right: 2em; }
+.btn-wrapper .btn-wrap:not(:last-child) { margin-right: .75em; }
 
 /* Form */
 .wrapper-form-top p:last-child { margin-bottom: 0; }
