@@ -4222,7 +4222,7 @@ a:hover { text-decoration: none; }
 
 .btn-white:hover, .single-tribe_events a.tribe-events-gcal:hover, .single-tribe_events a.tribe-events-ical:hover { background-color: #e6e6e6; }
 
-.btn-white.btn-outline, .single-tribe_events a.btn-outline.tribe-events-gcal, .single-tribe_events a.btn-outline.tribe-events-ical { border: 2px solid white; color: white; }
+.btn-white.btn-outline, .single-tribe_events a.btn-outline.tribe-events-gcal, .single-tribe_events a.btn-outline.tribe-events-ical { border: 1px solid white; color: white; }
 
 .btn-white.btn-outline:hover, .single-tribe_events a.btn-outline.tribe-events-gcal:hover, .single-tribe_events a.btn-outline.tribe-events-ical:hover { color: #6F797A; border-color: #e6e6e6; }
 
@@ -4336,7 +4336,7 @@ hr { border-top-width: 2px; }
 
 .navbar.navbar-light .dropdown-toggle::after { display: none; }
 
-.navbar.navbar-light .dropdown-menu { padding: 0; background-color: transparent; border: none; border-top: 5px solid #B01E3A; }
+.navbar.navbar-light .dropdown-menu { padding: 0; background-color: transparent; border: none; border-top: 5px solid #B01E3A; margin: .75rem .125rem 0 0; }
 
 .navbar.navbar-light .dropdown-menu:before { z-index: -1; content: '\f0d8'; font-family: "fontawesome"; font-style: normal; font-variant: normal; text-rendering: auto; -webkit-font-smoothing: antialiased; height: 15px; color: #B01E3A; position: absolute; top: -32px; left: 45%; font-size: 2rem; border: none; }
 

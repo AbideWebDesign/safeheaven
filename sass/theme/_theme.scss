@@ -98,7 +98,7 @@ a:hover {
 		background-color: darken(white, 10);
 	}
 	&.btn-outline {
-		border: 2px solid white;
+		border: 1px solid white;
 		color: white;
 		
 		&:hover {
@@ -375,7 +375,7 @@ hr {
 			background-color: transparent;
 			border: none;
 			border-top: 5px solid $primary;
-			
+			margin: .75rem .125rem 0 0;
 			&:before {
 				z-index: -1;
 				content: '\f0d8';
