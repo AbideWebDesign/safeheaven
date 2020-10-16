@@ -4,13 +4,13 @@
 		
 		<div class="row justify-content-center">
 			
-			<div class="col-md-12 col-xl-auto align-self-center text-center text-md-center text-xl-right mb-4 mb-xl-0">
+			<div class="col-auto align-self-center mb-4 mb-xl-0">
 				
-				<h2 class="mb-0 text-white alt"><?php the_field('donation_text'); ?></h2>
+				<h2 class="mb-0 text-white alt d-inline-block"><?php the_field('donation_text'); ?></h2>
 				
 			</div>
 			
-			<div class="col-12 col-lg-auto align-self-center">
+			<div class="col-auto align-self-center">
 				
 				<div class="btn-wrapper d-none d-lg-flex">
 					
