@@ -209,7 +209,7 @@ function acf_load_designation_field_choices( $field ) {
     $field['choices'] = array();
     
     $form = GFAPI::get_form( 2 );
-//  write_log($form);     
+
     $choices = $form['fields'][1]->choices;
     
     // loop through array and add to field 'choices'
