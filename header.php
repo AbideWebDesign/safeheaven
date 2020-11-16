@@ -19,16 +19,19 @@ defined( 'ABSPATH' ) || exit;
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
 	<link rel='stylesheet' id='safehaven-fonts-css' href='https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=PT+Sans:wght@400;700&display=swap' type='text/css' media='all' />
+	
 	<?php wp_head(); ?>
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q55PRYEV18"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-Q55PRYEV18');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', '<?php the_field('google_id', 'options'); ?>');
 	</script>
+
 </head>
 
 <body <?php body_class(); ?>>
