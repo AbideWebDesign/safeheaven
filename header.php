@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q55PRYEV18"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php the_field('google_id', 'options'); ?>"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
