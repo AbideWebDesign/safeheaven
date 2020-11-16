@@ -31,8 +31,16 @@ get_header();
 				<?php endwhile; ?>
 
 			<?php else : ?>
-
-				<?php get_template_part( 'loop-templates/content', 'none' ); ?>
+				
+				<div class="col-12">
+					
+					<div class="bg-white p-4">
+						
+						<h3 class="text-center wrapper-sm"><?php _e('No results found.'); ?></h3>
+						
+					</div>
+					
+				</div>
 
 			<?php endif; ?>
 
