@@ -4,6 +4,12 @@
 		
 		<div class="row justify-content-center">
 			
+			<div id="animal-spinner" class="col-12">
+				
+				<div class="gform_ajax_spinner"></div>	
+			
+			</div>
+			
 			<div class="col">
 			
 				<div id="animal" class="row"></div>
