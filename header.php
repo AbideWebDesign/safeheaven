@@ -74,13 +74,13 @@ defined( 'ABSPATH' ) || exit;
 					
 					<div class="mr-1 mr-md-0">
 						
-						<a href="<?php echo home_url('/donate'); ?>" class="btn btn-secondary h-100">Donate</a>
+						<a href="https://interland3.donorperfect.net/weblink/WebLink.aspx?name=E129958&id=1" class="btn btn-secondary h-100"><?php _e('Donate'); ?></a>
 						
 					</div>
 					
 					<div class="d-md-none mr-3">
 						
-						<a href="<?php echo home_url('/adopt'); ?>" class="btn btn-secondary h-100">Adopt</a>
+						<a href="<?php echo home_url('/adopt'); ?>" class="btn btn-secondary h-100"><?php _e('Adopt'); ?></a>
 						
 					</div>
 					
