@@ -66,6 +66,9 @@ ul {
 .text-lighten {
 	color: darken($light, 30);
 }
+.text-strong {
+	font-weight: bold;
+}
 *:focus {
 	outline: none;
 }

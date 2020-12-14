@@ -4204,6 +4204,8 @@ ul { margin-bottom: 1.8em; }
 
 .text-lighten { color: #82878a; }
 
+.text-strong { font-weight: bold; }
+
 *:focus { outline: none; }
 
 a:hover { text-decoration: none; }
