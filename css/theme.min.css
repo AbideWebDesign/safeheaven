@@ -4166,11 +4166,21 @@ h3 .searchwp-highlight, body .gsection_title .searchwp-highlight, .tribe-common-
 /* Adoption */
 #sort_by_name, .animal-be-result { display: none; }
 
-.adoptable-animal { margin-right: 0; }
+.adoptable-animal { margin-right: 0; float: none; height: auto; }
 
 .adoptable-animal .animal-name { display: block; font-weight: bold; }
 
 @media (max-width: 991.98px) { .adoptable-animal { height: auto; } }
+
+.animal-stage { text-transform: uppercase; font-weight: bold; text-align: center; padding: 1em; font-size: 12px; color: white; }
+
+.available { background-color: #4CA045; }
+
+.awaiting-sn-available { background-color: #c06400; }
+
+.on-hold, .stray-hold { background-color: #B01E3A; }
+
+.available-medical-treatment { background-color: #006CAC; }
 
 body a { transition: all .2s ease-in-out; }
 

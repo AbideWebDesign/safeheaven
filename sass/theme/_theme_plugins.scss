@@ -759,6 +759,9 @@ h3 {
 }
 .adoptable-animal {
 	margin-right: 0;
+	float: none;
+	height: auto;
+	
 	@extend .col-xl-2;
 	@extend .col-md-3;
 	@extend .col-6;
@@ -772,4 +775,24 @@ h3 {
 			height: auto;
 		
 	}
+}
+.animal-stage {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+	font-size: 12px;
+	color: white;
+}
+.available {
+	background-color: #4CA045;
+}
+.awaiting-sn-available {
+	background-color: #c06400;
+}
+.on-hold, .stray-hold {
+	background-color: $primary;
+}
+.available-medical-treatment {
+	background-color: #006CAC;
 }
