@@ -26,7 +26,7 @@ $event_id = get_the_ID();
 	<div class="container">
 		<div class="row justify-content-between">
 			<div class="col-auto align-self-center">
-				<h4 class="mb-0">Event Calendar</h4>
+				<h4 class="mb-0"><?php _e('Event Calendar'); ?></h4>
 			</div>
 			<div class="col-auto">
 				<a class="btn btn-white btn-sm" href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( esc_html_x( 'Full Calendar', 'the-events-calendar' ), $events_label_plural ); ?></a>

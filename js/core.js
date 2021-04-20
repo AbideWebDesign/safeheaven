@@ -46,11 +46,5 @@ jQuery(function ($) {
 		.on('mouseenter mouseleave','.dropdown',toggleDropdown)
 		.on('click', '.dropdown-menu a', toggleDropdown);
 
-		
-/*
-	$frame = $('#adoption-embed'); 
-	curHeight = $frame.contents().find('body').height();
-	$frame.css('height', curHeight);
-*/
 });
 

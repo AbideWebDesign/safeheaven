@@ -423,7 +423,7 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 
 .form-control::placeholder, body .gform_wrapper .StripeElement::placeholder, body .gform_wrapper input[type="email"]::placeholder, body .gform_wrapper input[type="date"]::placeholder, body .gform_wrapper input[type="datetime"]::placeholder, body .gform_wrapper input[type="datetime-local"]::placeholder, body .gform_wrapper input[type="month"]::placeholder, body .gform_wrapper input[type="number"]::placeholder, body .gform_wrapper input[type="password"]::placeholder, body .gform_wrapper input[type="search"]::placeholder, body .gform_wrapper input[type="tel"]::placeholder, body .gform_wrapper input[type="text"]::placeholder, body .gform_wrapper input[type="time"]::placeholder, body .gform_wrapper input[type="week"]::placeholder, body .gform_wrapper input[type="url"]::placeholder, body .gform_wrapper .ginput_container_textarea .textarea::placeholder, .widget_categories select::placeholder, .widget_archive select::placeholder { color: #6c757d; opacity: 1; }
 
-.form-control:disabled, body .gform_wrapper .StripeElement:disabled, body .gform_wrapper input[type="email"]:disabled, body .gform_wrapper input[type="date"]:disabled, body .gform_wrapper input[type="datetime"]:disabled, body .gform_wrapper input[type="datetime-local"]:disabled, body .gform_wrapper input[type="month"]:disabled, body .gform_wrapper input[type="number"]:disabled, body .gform_wrapper input[type="password"]:disabled, body .gform_wrapper input[type="search"]:disabled, body .gform_wrapper input[type="tel"]:disabled, body .gform_wrapper input[type="text"]:disabled, body .gform_wrapper input[type="time"]:disabled, body .gform_wrapper input[type="week"]:disabled, body .gform_wrapper input[type="url"]:disabled, body .gform_wrapper .ginput_container_textarea .textarea:disabled, .widget_categories select:disabled, .widget_archive select:disabled, .form-control[readonly], body .gform_wrapper .StripeElement[readonly], body .gform_wrapper input[readonly][type="email"], body .gform_wrapper input[readonly][type="date"], body .gform_wrapper input[readonly][type="datetime"], body .gform_wrapper input[readonly][type="datetime-local"], body .gform_wrapper input[readonly][type="month"], body .gform_wrapper input[readonly][type="number"], body .gform_wrapper input[readonly][type="password"], body .gform_wrapper input[readonly][type="search"], body .gform_wrapper input[readonly][type="tel"], body .gform_wrapper input[readonly][type="text"], body .gform_wrapper input[readonly][type="time"], body .gform_wrapper input[readonly][type="week"], body .gform_wrapper input[readonly][type="url"], body .gform_wrapper .ginput_container_textarea .textarea[readonly], .widget_categories select[readonly], .widget_archive select[readonly] { background-color: #e9ecef; opacity: 1; }
+.form-control:disabled, body .gform_wrapper .StripeElement:disabled, body .gform_wrapper input[type="email"]:disabled, body .gform_wrapper input[type="date"]:disabled, body .gform_wrapper input[type="datetime"]:disabled, body .gform_wrapper input[type="datetime-local"]:disabled, body .gform_wrapper input[type="month"]:disabled, body .gform_wrapper input[type="number"]:disabled, body .gform_wrapper input[type="password"]:disabled, body .gform_wrapper input[type="search"]:disabled, body .gform_wrapper input[type="tel"]:disabled, body .gform_wrapper input[type="text"]:disabled, body .gform_wrapper input[type="time"]:disabled, body .gform_wrapper input[type="week"]:disabled, body .gform_wrapper input[type="url"]:disabled, body .gform_wrapper .ginput_container_textarea .textarea:disabled, .widget_categories select:disabled, .widget_archive select:disabled, .form-control[readonly], body .gform_wrapper [readonly].StripeElement, body .gform_wrapper input[readonly][type="email"], body .gform_wrapper input[readonly][type="date"], body .gform_wrapper input[readonly][type="datetime"], body .gform_wrapper input[readonly][type="datetime-local"], body .gform_wrapper input[readonly][type="month"], body .gform_wrapper input[readonly][type="number"], body .gform_wrapper input[readonly][type="password"], body .gform_wrapper input[readonly][type="search"], body .gform_wrapper input[readonly][type="tel"], body .gform_wrapper input[readonly][type="text"], body .gform_wrapper input[readonly][type="time"], body .gform_wrapper input[readonly][type="week"], body .gform_wrapper input[readonly][type="url"], body .gform_wrapper .ginput_container_textarea [readonly].textarea, .widget_categories select[readonly], .widget_archive select[readonly] { background-color: #e9ecef; opacity: 1; }
 
 select.form-control:focus::-ms-value, body .gform_wrapper .ginput_container_textarea select.textarea:focus::-ms-value, .widget_categories select:focus::-ms-value, .widget_archive select:focus::-ms-value { color: #495057; background-color: #fff; }
 
@@ -443,7 +443,7 @@ select.form-control:focus::-ms-value, body .gform_wrapper .ginput_container_text
 
 .form-control-lg, body .gform_wrapper .StripeElement, body .gform_wrapper input[type="email"], body .gform_wrapper input[type="date"], body .gform_wrapper input[type="datetime"], body .gform_wrapper input[type="datetime-local"], body .gform_wrapper input[type="month"], body .gform_wrapper input[type="number"], body .gform_wrapper input[type="password"], body .gform_wrapper input[type="search"], body .gform_wrapper input[type="tel"], body .gform_wrapper input[type="text"], body .gform_wrapper input[type="time"], body .gform_wrapper input[type="week"], body .gform_wrapper input[type="url"] { height: calc(1.5em + 1.5rem + 2px); padding: 0.75rem 1rem; font-size: 1.25rem; line-height: 1.5; border-radius: 0.3rem; }
 
-select.form-control[size], body .gform_wrapper .ginput_container_textarea select.textarea[size], .widget_categories select[size], .widget_archive select[size], select.form-control[multiple], body .gform_wrapper .ginput_container_textarea select.textarea[multiple], .widget_categories select[multiple], .widget_archive select[multiple] { height: auto; }
+select.form-control[size], body .gform_wrapper .ginput_container_textarea select[size].textarea, .widget_categories select[size], .widget_archive select[size], select.form-control[multiple], body .gform_wrapper .ginput_container_textarea select[multiple].textarea, .widget_categories select[multiple], .widget_archive select[multiple] { height: auto; }
 
 textarea.form-control, body .gform_wrapper .ginput_container_textarea textarea.textarea { height: auto; }
 
@@ -577,9 +577,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-primary.disabled, .tribe-common .disabled.tribe-common-c-btn, body .site .tribe-events .disabled.tribe-events-c-ical__link, body .site .disabled.btn-tribe, body .disabled.shiftnav-toggle-button, body .gform_wrapper .gform_footer input.disabled.button, body .gform_wrapper .gform_footer input.disabled[type=submit], body .gform_wrapper .gform_page_footer input.disabled.button, body .gform_wrapper .gform_page_footer input.disabled[type=submit], .btn-primary:disabled, .tribe-common .tribe-common-c-btn:disabled, body .site .tribe-events .tribe-events-c-ical__link:disabled, body .site .btn-tribe:disabled, body .shiftnav-toggle-button:disabled, body .gform_wrapper .gform_footer input.button:disabled, body .gform_wrapper .gform_footer input[type=submit]:disabled, body .gform_wrapper .gform_page_footer input.button:disabled, body .gform_wrapper .gform_page_footer input[type=submit]:disabled { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
 
-.btn-primary:not(:disabled):not(.disabled):active, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled):active, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled):active, body .site .btn-tribe:not(:disabled):not(.disabled):active, body .shiftnav-toggle-button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled):active, .btn-primary.active:not(:disabled):not(.disabled), .tribe-common .tribe-common-c-btn.active:not(:disabled):not(.disabled), body .site .tribe-events .tribe-events-c-ical__link.active:not(:disabled):not(.disabled), body .site .btn-tribe.active:not(:disabled):not(.disabled), body .shiftnav-toggle-button.active:not(:disabled):not(.disabled), body .gform_wrapper .gform_footer input.button.active:not(:disabled):not(.disabled), body .gform_wrapper .gform_footer input.active[type=submit]:not(:disabled):not(.disabled), body .gform_wrapper .gform_page_footer input.button.active:not(:disabled):not(.disabled), body .gform_wrapper .gform_page_footer input.active[type=submit]:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle, .tribe-common .show > .dropdown-toggle.tribe-common-c-btn, body .site .tribe-events .show > .dropdown-toggle.tribe-events-c-ical__link, body .site .show > .dropdown-toggle.btn-tribe, body .show > .dropdown-toggle.shiftnav-toggle-button, body .gform_wrapper .gform_footer .show > input.dropdown-toggle.button, body .gform_wrapper .gform_footer .show > input.dropdown-toggle[type=submit], body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle.button, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle[type=submit] { color: #fff; background-color: #84172c; border-color: #7a1528; }
+.btn-primary:not(:disabled):not(.disabled):active, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled):active, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled):active, body .site .btn-tribe:not(:disabled):not(.disabled):active, body .shiftnav-toggle-button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled):active, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled).active, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled).active, body .site .btn-tribe:not(:disabled):not(.disabled).active, body .shiftnav-toggle-button:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled).active, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .tribe-common .show > .dropdown-toggle.tribe-common-c-btn, body .site .tribe-events .show > .dropdown-toggle.tribe-events-c-ical__link, body .site .show > .dropdown-toggle.btn-tribe, body .show > .dropdown-toggle.shiftnav-toggle-button, body .gform_wrapper .gform_footer .show > input.dropdown-toggle.button, body .gform_wrapper .gform_footer .show > input.dropdown-toggle[type=submit], body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle.button, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle[type=submit] { color: #fff; background-color: #84172c; border-color: #7a1528; }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled):active:focus, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled):active:focus, body .site .btn-tribe:not(:disabled):not(.disabled):active:focus, body .shiftnav-toggle-button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled):active:focus, .btn-primary.active:not(:disabled):not(.disabled):focus, .tribe-common .tribe-common-c-btn.active:not(:disabled):not(.disabled):focus, body .site .tribe-events .tribe-events-c-ical__link.active:not(:disabled):not(.disabled):focus, body .site .btn-tribe.active:not(:disabled):not(.disabled):focus, body .shiftnav-toggle-button.active:not(:disabled):not(.disabled):focus, body .gform_wrapper .gform_footer input.button.active:not(:disabled):not(.disabled):focus, body .gform_wrapper .gform_footer input.active[type=submit]:not(:disabled):not(.disabled):focus, body .gform_wrapper .gform_page_footer input.button.active:not(:disabled):not(.disabled):focus, body .gform_wrapper .gform_page_footer input.active[type=submit]:not(:disabled):not(.disabled):focus, .show > .btn-primary.dropdown-toggle:focus, .tribe-common .show > .dropdown-toggle.tribe-common-c-btn:focus, body .site .tribe-events .show > .dropdown-toggle.tribe-events-c-ical__link:focus, body .site .show > .dropdown-toggle.btn-tribe:focus, body .show > .dropdown-toggle.shiftnav-toggle-button:focus, body .gform_wrapper .gform_footer .show > input.dropdown-toggle.button:focus, body .gform_wrapper .gform_footer .show > input.dropdown-toggle[type=submit]:focus, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle.button:focus, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle[type=submit]:focus { box-shadow: 0 0 0 0 rgba(188, 64, 88, 0.5); }
+.btn-primary:not(:disabled):not(.disabled):active:focus, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled):active:focus, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled):active:focus, body .site .btn-tribe:not(:disabled):not(.disabled):active:focus, body .shiftnav-toggle-button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled):active:focus, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .tribe-common .tribe-common-c-btn:not(:disabled):not(.disabled).active:focus, body .site .tribe-events .tribe-events-c-ical__link:not(:disabled):not(.disabled).active:focus, body .site .btn-tribe:not(:disabled):not(.disabled).active:focus, body .shiftnav-toggle-button:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_footer input.button:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_footer input[type=submit]:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_page_footer input.button:not(:disabled):not(.disabled).active:focus, body .gform_wrapper .gform_page_footer input[type=submit]:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus, .tribe-common .show > .dropdown-toggle.tribe-common-c-btn:focus, body .site .tribe-events .show > .dropdown-toggle.tribe-events-c-ical__link:focus, body .site .show > .dropdown-toggle.btn-tribe:focus, body .show > .dropdown-toggle.shiftnav-toggle-button:focus, body .gform_wrapper .gform_footer .show > input.dropdown-toggle.button:focus, body .gform_wrapper .gform_footer .show > input.dropdown-toggle[type=submit]:focus, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle.button:focus, body .gform_wrapper .gform_page_footer .show > input.dropdown-toggle[type=submit]:focus { box-shadow: 0 0 0 0 rgba(188, 64, 88, 0.5); }
 
 .btn-secondary, body .form-sm button { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
@@ -589,9 +589,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-secondary.disabled, body .form-sm button.disabled, .btn-secondary:disabled, body .form-sm button:disabled { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
-.btn-secondary:not(:disabled):not(.disabled):active, body .form-sm button:not(:disabled):not(.disabled):active, .btn-secondary.active:not(:disabled):not(.disabled), body .form-sm button.active:not(:disabled):not(.disabled), .show > .btn-secondary.dropdown-toggle, body .form-sm .show > button.dropdown-toggle { color: #fff; background-color: #575f5f; border-color: #515859; }
+.btn-secondary:not(:disabled):not(.disabled):active, body .form-sm button:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, body .form-sm button:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, body .form-sm .show > button.dropdown-toggle { color: #fff; background-color: #575f5f; border-color: #515859; }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus, body .form-sm button:not(:disabled):not(.disabled):active:focus, .btn-secondary.active:not(:disabled):not(.disabled):focus, body .form-sm button.active:not(:disabled):not(.disabled):focus, .show > .btn-secondary.dropdown-toggle:focus, body .form-sm .show > button.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(133, 141, 142, 0.5); }
+.btn-secondary:not(:disabled):not(.disabled):active:focus, body .form-sm button:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, body .form-sm button:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus, body .form-sm .show > button.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(133, 141, 142, 0.5); }
 
 .btn-success { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
@@ -601,9 +601,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-success.disabled, .btn-success:disabled { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
-.btn-success:not(:disabled):not(.disabled):active, .btn-success.active:not(:disabled):not(.disabled), .show > .btn-success.dropdown-toggle { color: #fff; background-color: #575f5f; border-color: #515859; }
+.btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle { color: #fff; background-color: #575f5f; border-color: #515859; }
 
-.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success.active:not(:disabled):not(.disabled):focus, .show > .btn-success.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(133, 141, 142, 0.5); }
+.btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(133, 141, 142, 0.5); }
 
 .btn-info { color: #fff; background-color: #17a2b8; border-color: #17a2b8; }
 
@@ -613,9 +613,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-info.disabled, .btn-info:disabled { color: #fff; background-color: #17a2b8; border-color: #17a2b8; }
 
-.btn-info:not(:disabled):not(.disabled):active, .btn-info.active:not(:disabled):not(.disabled), .show > .btn-info.dropdown-toggle { color: #fff; background-color: #117a8b; border-color: #10707f; }
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show > .btn-info.dropdown-toggle { color: #fff; background-color: #117a8b; border-color: #10707f; }
 
-.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info.active:not(:disabled):not(.disabled):focus, .show > .btn-info.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(58, 176, 195, 0.5); }
+.btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus, .show > .btn-info.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(58, 176, 195, 0.5); }
 
 .btn-warning { color: #212529; background-color: #ffc107; border-color: #ffc107; }
 
@@ -625,9 +625,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-warning.disabled, .btn-warning:disabled { color: #212529; background-color: #ffc107; border-color: #ffc107; }
 
-.btn-warning:not(:disabled):not(.disabled):active, .btn-warning.active:not(:disabled):not(.disabled), .show > .btn-warning.dropdown-toggle { color: #212529; background-color: #d39e00; border-color: #c69500; }
+.btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle { color: #212529; background-color: #d39e00; border-color: #c69500; }
 
-.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-warning.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(222, 170, 12, 0.5); }
+.btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(222, 170, 12, 0.5); }
 
 .btn-danger { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
 
@@ -637,9 +637,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-danger.disabled, .btn-danger:disabled { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
 
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger.active:not(:disabled):not(.disabled), .show > .btn-danger.dropdown-toggle { color: #fff; background-color: #84172c; border-color: #7a1528; }
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle { color: #fff; background-color: #84172c; border-color: #7a1528; }
 
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-danger.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(188, 64, 88, 0.5); }
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(188, 64, 88, 0.5); }
 
 .btn-light { color: #212529; background-color: #D1D3D4; border-color: #D1D3D4; }
 
@@ -649,9 +649,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-light.disabled, .btn-light:disabled { color: #212529; background-color: #D1D3D4; border-color: #D1D3D4; }
 
-.btn-light:not(:disabled):not(.disabled):active, .btn-light.active:not(:disabled):not(.disabled), .show > .btn-light.dropdown-toggle { color: #212529; background-color: #b7babb; border-color: #b0b3b5; }
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle { color: #212529; background-color: #b7babb; border-color: #b0b3b5; }
 
-.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light.active:not(:disabled):not(.disabled):focus, .show > .btn-light.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(183, 185, 186, 0.5); }
+.btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(183, 185, 186, 0.5); }
 
 .btn-dark, .wrapper-footer-top .gform_wrapper .gform_footer .button { color: #fff; background-color: #202833; border-color: #202833; }
 
@@ -661,9 +661,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-dark.disabled, .wrapper-footer-top .gform_wrapper .gform_footer .disabled.button, .btn-dark:disabled, .wrapper-footer-top .gform_wrapper .gform_footer .button:disabled { color: #fff; background-color: #202833; border-color: #202833; }
 
-.btn-dark:not(:disabled):not(.disabled):active, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled):active, .btn-dark.active:not(:disabled):not(.disabled), .wrapper-footer-top .gform_wrapper .gform_footer .button.active:not(:disabled):not(.disabled), .show > .btn-dark.dropdown-toggle, .wrapper-footer-top .gform_wrapper .gform_footer .show > .dropdown-toggle.button { color: #fff; background-color: #0c0f14; border-color: #07090c; }
+.btn-dark:not(:disabled):not(.disabled):active, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle, .wrapper-footer-top .gform_wrapper .gform_footer .show > .dropdown-toggle.button { color: #fff; background-color: #0c0f14; border-color: #07090c; }
 
-.btn-dark:not(:disabled):not(.disabled):active:focus, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled):active:focus, .btn-dark.active:not(:disabled):not(.disabled):focus, .wrapper-footer-top .gform_wrapper .gform_footer .button.active:not(:disabled):not(.disabled):focus, .show > .btn-dark.dropdown-toggle:focus, .wrapper-footer-top .gform_wrapper .gform_footer .show > .dropdown-toggle.button:focus { box-shadow: 0 0 0 0 rgba(65, 72, 82, 0.5); }
+.btn-dark:not(:disabled):not(.disabled):active:focus, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .wrapper-footer-top .gform_wrapper .gform_footer .button:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus, .wrapper-footer-top .gform_wrapper .gform_footer .show > .dropdown-toggle.button:focus { box-shadow: 0 0 0 0 rgba(65, 72, 82, 0.5); }
 
 .btn-outline-primary { color: #B01E3A; border-color: #B01E3A; }
 
@@ -673,9 +673,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled { color: #B01E3A; background-color: transparent; }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary.active:not(:disabled):not(.disabled), .show > .btn-outline-primary.dropdown-toggle { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-primary.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(176, 30, 58, 0.5); }
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(176, 30, 58, 0.5); }
 
 .btn-outline-secondary { color: #6F797A; border-color: #6F797A; }
 
@@ -685,9 +685,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled { color: #6F797A; background-color: transparent; }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary.active:not(:disabled):not(.disabled), .show > .btn-outline-secondary.dropdown-toggle { color: #fff; background-color: #6F797A; border-color: #6F797A; }
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
-.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-secondary.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(111, 121, 122, 0.5); }
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(111, 121, 122, 0.5); }
 
 .btn-outline-success { color: #6F797A; border-color: #6F797A; }
 
@@ -697,9 +697,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-success.disabled, .btn-outline-success:disabled { color: #6F797A; background-color: transparent; }
 
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success.active:not(:disabled):not(.disabled), .show > .btn-outline-success.dropdown-toggle { color: #fff; background-color: #6F797A; border-color: #6F797A; }
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .show > .btn-outline-success.dropdown-toggle { color: #fff; background-color: #6F797A; border-color: #6F797A; }
 
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-success.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(111, 121, 122, 0.5); }
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-success.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(111, 121, 122, 0.5); }
 
 .btn-outline-info { color: #17a2b8; border-color: #17a2b8; }
 
@@ -709,9 +709,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-info.disabled, .btn-outline-info:disabled { color: #17a2b8; background-color: transparent; }
 
-.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info.active:not(:disabled):not(.disabled), .show > .btn-outline-info.dropdown-toggle { color: #fff; background-color: #17a2b8; border-color: #17a2b8; }
+.btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active, .show > .btn-outline-info.dropdown-toggle { color: #fff; background-color: #17a2b8; border-color: #17a2b8; }
 
-.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-info.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(23, 162, 184, 0.5); }
+.btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(23, 162, 184, 0.5); }
 
 .btn-outline-warning { color: #ffc107; border-color: #ffc107; }
 
@@ -721,9 +721,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled { color: #ffc107; background-color: transparent; }
 
-.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning.active:not(:disabled):not(.disabled), .show > .btn-outline-warning.dropdown-toggle { color: #212529; background-color: #ffc107; border-color: #ffc107; }
+.btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active, .show > .btn-outline-warning.dropdown-toggle { color: #212529; background-color: #ffc107; border-color: #ffc107; }
 
-.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-warning.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5); }
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5); }
 
 .btn-outline-danger { color: #B01E3A; border-color: #B01E3A; }
 
@@ -733,9 +733,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled { color: #B01E3A; background-color: transparent; }
 
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger.active:not(:disabled):not(.disabled), .show > .btn-outline-danger.dropdown-toggle { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
+.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle { color: #fff; background-color: #B01E3A; border-color: #B01E3A; }
 
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-danger.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(176, 30, 58, 0.5); }
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(176, 30, 58, 0.5); }
 
 .btn-outline-light { color: #D1D3D4; border-color: #D1D3D4; }
 
@@ -745,9 +745,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-light.disabled, .btn-outline-light:disabled { color: #D1D3D4; background-color: transparent; }
 
-.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light.active:not(:disabled):not(.disabled), .show > .btn-outline-light.dropdown-toggle { color: #212529; background-color: #D1D3D4; border-color: #D1D3D4; }
+.btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active, .show > .btn-outline-light.dropdown-toggle { color: #212529; background-color: #D1D3D4; border-color: #D1D3D4; }
 
-.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-light.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(209, 211, 212, 0.5); }
+.btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-light.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(209, 211, 212, 0.5); }
 
 .btn-outline-dark { color: #202833; border-color: #202833; }
 
@@ -757,9 +757,9 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-outline-dark.disabled, .btn-outline-dark:disabled { color: #202833; background-color: transparent; }
 
-.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark.active:not(:disabled):not(.disabled), .show > .btn-outline-dark.dropdown-toggle { color: #fff; background-color: #202833; border-color: #202833; }
+.btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle { color: #fff; background-color: #202833; border-color: #202833; }
 
-.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark.active:not(:disabled):not(.disabled):focus, .show > .btn-outline-dark.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(32, 40, 51, 0.5); }
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus { box-shadow: 0 0 0 0 rgba(32, 40, 51, 0.5); }
 
 .btn-link { font-weight: 400; color: #B01E3A; text-decoration: none; }
 
@@ -777,7 +777,7 @@ a.btn.disabled, .tribe-common a.disabled.tribe-common-c-btn, .single-tribe_event
 
 .btn-block + .btn-block, body .form-sm button + .btn-block, body .form-sm .btn-block + button, body .form-sm button + button { margin-top: 0.5rem; }
 
-input.btn-block[type="submit"], body .form-sm button[type="submit"], input.btn-block[type="reset"], body .form-sm button[type="reset"], input.btn-block[type="button"], body .form-sm button[type="button"] { width: 100%; }
+input[type="submit"].btn-block, body .form-sm button[type="submit"], input[type="reset"].btn-block, body .form-sm button[type="reset"], input[type="button"].btn-block, body .form-sm button[type="button"] { width: 100%; }
 
 .fade { transition: opacity 0.15s linear; }
 
@@ -2395,7 +2395,7 @@ a.text-dark:hover, a.text-dark:focus { color: #030304 !important; }
 
 .sticky, .gallery-caption, .bypostauthor { font-size: inherit; }
 
-#wrapper-sticky.wrapper { border-bottom: 1px solid #dee2e6; }
+.wrapper#wrapper-sticky { border-bottom: 1px solid #dee2e6; }
 
 #wrapper-footer-full, #wrapper-static-hero { background-color: #e9ecef; }
 
@@ -3939,7 +3939,7 @@ body .gform_wrapper .gfield_error .ginput_container_email, body .gform_wrapper .
 
 body .gform_wrapper .gfield_error .input-group-text { color: white; }
 
-body .gform_wrapper input.ginput_amount[type="text"] { color: #202833; font-size: 24px; }
+body .gform_wrapper input[type="text"].ginput_amount { color: #202833; font-size: 24px; }
 
 body .gform_wrapper .ginput_container_creditcard .validation_message { display: none; }
 
@@ -4174,9 +4174,7 @@ h3 .searchwp-highlight, body .gsection_title .searchwp-highlight, .tribe-common-
 
 .animal-stage { text-transform: uppercase; font-weight: bold; text-align: center; padding: 1em; font-size: 12px; color: white; }
 
-.available { background-color: #4CA045; }
-
-.awaiting-sn-available { background-color: #c06400; }
+.available, .awaiting-sn-available { background-color: #4CA045; }
 
 .on-hold, .stray-hold { background-color: #B01E3A; }
 

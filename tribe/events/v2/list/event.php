@@ -29,7 +29,7 @@ $container_classes['tribe-events-calendar-list__event-row--featured'] = $event->
 		
 		<div class="col-md-5 col-lg-4 col-xl-3">
 			
-			<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( get_field('events_featured_image'), 'Square - MD', false, array('class'=>'img-fluid h-100') ); ?></a>
+			<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( get_field('events_featured_image'), 'Square', false, array('class'=>'img-fluid h-100') ); ?></a>
 			
 		</div>
 	
