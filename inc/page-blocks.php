@@ -71,6 +71,15 @@ function safehaven_acf_init() {
 			'category'			=> 'formatting',
 			'icon'				=> 'ellipsis',
 		));
+		// register recent adoptions block
+		acf_register_block(array(
+			'name'				=> 'recent-adoptions',
+			'title'				=> __('Recent Adoptions'),
+			'description'		=> __(''),
+			'render_callback'	=> 'safehaven_acf_block_render_callback',
+			'category'			=> 'formatting',
+			'icon'				=> 'heart',
+		));
 	}
 }
 
@@ -99,6 +108,7 @@ function safehaven_allowed_block_types( $allowed_blocks ) {
 		'acf/text',
 		'acf/form',
 		'acf/breadcrumb',
+		'acf/recent-adoptions',
 	);
  
 }
