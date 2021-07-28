@@ -26,6 +26,7 @@ function get_adopted_animals() {
 				
 				$p = array (
 					'post_type'		=> 'animal',
+					'post_status' 	=> 'publish',
 					'post_title' 	=> (string)$result->adoption->AnimalID,	
 				);
 				
