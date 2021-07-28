@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 		
 		<div class="row justify-content-center">
 			
-			<div class="col-lg-auto align-self-center">
+			<div class="col-lg-3 col-xl-auto align-self-center">
 				
 				<h3 class="text-white text-center text-lg-left mb-4 mb-lg-0"><?php the_field('footer_top_title', 'options'); ?></h4>
 				

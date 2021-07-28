@@ -1,12 +1,4 @@
-<?php
-
-	$apiUrl = 'https://ws.petango.com/webservices/wsadoption.asmx/AdoptionList';
-	
-	$secret = 'xj2bgthow4xval713ipmigwf1f5ejhq12ykypmgeqfpohii3de';
-	
-	$date = new DateTime();
-		
-?>
+<?php $date = new DateTime(); ?>
 
 <div class="wrapper">
 	
@@ -28,49 +20,45 @@
 			
 			<?php if ( ! is_admin() ): ?>
 				
-				<?php for ( $days = get_field('recent_number_of_days'); $days--; ): ?>
-					
-					<?php $uri = $apiUrl . '?authkey=' . $secret . '&adoptionDate=' . $date->modify( '-1 days' )->format( 'm/d/y' ) . '&siteID='; ?>
-							
-					<?php $response = wp_remote_get( $uri ); ?>
+				<?php $animals = get_posts( [ 'post_type' => 'animal', 'posts_per_page' => '-1', 'date_query' => [ [ 'after' => $date->modify('-30 day')->format('y-m-d') ] ] ] ); ?>
 				
-					<?php $responseBody = wp_remote_retrieve_body( $response ); ?>
-			
-					<?php $xml = simplexml_load_string( $responseBody );  ?>
+				<?php foreach ( $animals as $animal ): ?>
 					
-					<?php foreach( $xml as $result ): ?>
+					<?php $adopted = new DateTime( get_field('adoption_date') ); ?>
 					
-						<?php $adopted = new DateTime($result->adoption->AdoptionDate); ?>
+					<div class="adoptable-animal mb-1 mb-md-3">
 						
-						<div class="adoptable-animal mb-1 mb-md-3">
-							
-							<div class="h-100 bg-light">
-																			
-								<div class="bg-light p-2 p-md-3">
+						<div class="h-100 bg-light">
+																		
+							<div class="bg-light">
+								
+								<?php echo wp_get_attachment_image( get_field('animal_image', $animal->ID), 'medium', false, array('class'=>'img-fluid w-100') ); ?>
+								
+								<div class="p-2 p-md-3">
 									
-									<div class="text-primary"><strong><?php echo $result->adoption->AnimalName; ?></strong></div>
+									<div class="text-primary"><strong><?php the_field('animal_name', $animal->ID); ?></strong></div>
 									
-									<p><?php echo $result->adoption->Species; ?></p>
+									<p><?php the_field('animal_type', $animal->ID); ?></p>
 									
-									<p><?php echo $result->adoption->Sex; ?></p>
+									<p><?php the_field('animal_sex', $animal->ID); ?></p>
 									
-									<p><?php _e('Adoption Date:'); ?> <?php echo $adopted->format( 'm/d/y' ); ?></p>
-									
+									<p><?php _e('Adoption Date:'); ?> <?php the_field('adoption_date', $animal->ID); ?></p>
+								
 								</div>
 								
-								<div class="animal-stage available">
-									
-									<div><?php _e('Adopted'); ?></div>
-									
-								</div>
-							
 							</div>
+							
+							<?php if ( get_field('adoption_story', $animal->ID) ): ?>
+							
+								<a href="<?php the_permalink( $animal->ID ); ?>" class="btn btn-primary btn-block stretched-link"><?php _e('Read Story'); ?> <i class="fa fa-chevron-right text-xs"></i></a>
+							
+							<?php endif; ?>
 						
 						</div>
-						
-					<?php endforeach; ?>
+					
+					</div>
 				
-				<?php endfor; ?>
+				<?php endforeach; ?>
 				
 			<?php else: ?>
 			

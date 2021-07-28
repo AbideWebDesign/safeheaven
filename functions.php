@@ -15,6 +15,7 @@ $safehaven_includes = array(
 	'/class-wp-bootstrap-navwalker.php',    
 	'/editor.php',                          // Load Editor functions.
 	'/page-blocks.php',						// Load ACF page blocks.
+	'/petango.php',
 );
 
 foreach ( $safehaven_includes as $file ) {
