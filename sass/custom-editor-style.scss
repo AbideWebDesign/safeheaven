@@ -23,8 +23,10 @@ body {
 	}
 	
 	.block-editor-block-toolbar {
-		.components-toolbar:first-child {
- 			display: none;
+		.block-editor-block-toolbar {
+			button[aria-label='Align'] {
+				display: none; 
+			}
 		}
 	}
 	
