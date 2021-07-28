@@ -10,7 +10,7 @@ function get_adopted_animals() {
 	
 	$date = new DateTime();
 	
-	for ( $days = 2; $days--; ) {
+	for ( $days = 30; $days--; ) {
 		
 		$uri = $apiUrl . '?authkey=' . $secret . '&adoptionDate=' . $date->modify( '-1 days' )->format( 'm/d/y' ) . '&siteID=';
 		
