@@ -13,16 +13,16 @@ function get_adopted_animals() {
 	for ( $days = 1; $days--; ) {
 		
 		$uri = $apiUrl . '?authkey=' . $secret . '&adoptionDate=' . $date->modify( '-1 days' )->format( 'm/d/y' ) . '&siteID=';
-		
+
 		$response = wp_remote_get( $uri );
 		
 		$responseBody = wp_remote_retrieve_body( $response );
 		
-		$xml = simplexml_load_string( $responseBody );
+		$xml = new SimpleXMLElement( $responseBody );
 		
 		foreach( $xml as $result ) {
 		
-			if ( ! get_page_by_title( $result->adoption->AnimalID , OBJECT, 'animal' ) ) {
+			if ( ! get_page_by_title( (string)$result->adoption->AnimalID, 'animal' ) ) {
 				
 				$p = array (
 					'post_type'		=> 'animal',
