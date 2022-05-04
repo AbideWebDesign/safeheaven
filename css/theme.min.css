@@ -4174,7 +4174,11 @@ h3 .searchwp-highlight, body .gsection_title .searchwp-highlight, .tribe-common-
 
 .animal-stage { text-transform: uppercase; font-weight: bold; text-align: center; padding: 1em; font-size: 12px; color: white; }
 
-.available, .awaiting-sn-available, .awaiting-sn-on-hold, .medical-treatment { background-color: #4CA045; }
+.available, .awaiting-sn-available { background-color: #4CA045; }
+
+.awaiting-sn-on-hold { background-color: #ccaa34; }
+
+.medical-treatment { background-color: #4958c9; }
 
 .on-hold, .stray-hold { background-color: #B01E3A; }
 

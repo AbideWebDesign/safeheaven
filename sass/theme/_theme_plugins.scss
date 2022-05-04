@@ -784,8 +784,14 @@ h3 {
 	font-size: 12px;
 	color: white;
 }
-.available, .awaiting-sn-available, .awaiting-sn-on-hold, .medical-treatment {
+.available, .awaiting-sn-available {
 	background-color: #4CA045;
+}
+.awaiting-sn-on-hold {
+	background-color: #ccaa34;
+}
+.medical-treatment {
+	background-color: #4958c9;
 }
 .on-hold, .stray-hold {
 	background-color: $primary;
