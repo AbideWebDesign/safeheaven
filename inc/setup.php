@@ -220,26 +220,3 @@ add_filter( 'acf/the_field/allow_unsafe_html', function( $allowed, $selector ) {
     return $allowed;
     
 }, 10, 2);
-
-add_action('wp_head', 'admin_bar_style_override');
-add_action('admin_head', 'admin_bar_style_override');
-
-function admin_bar_style_override() {
-	
-	if ( is_user_logged_in() ) {
-		
-		?>
-		
-		<style>
-			
-			.acf-escaped-html-notice {
-				display: none !important;
-			}
-			
-		<?php
-		
-	}
-	
-	echo "</style>";
-	
-}
