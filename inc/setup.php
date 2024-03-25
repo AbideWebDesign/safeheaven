@@ -174,33 +174,6 @@ function searchwp_term_highlight_auto_excerpt( $excerpt ) {
 	return wp_kses_post( $global_excerpt );
 }
 
-/*
- * Add custom fields to search
- *
- */
-function searchwp_acf_repeater_keys( $keys ) {
-	$keys[] = 'text_content';
-	$keys[] = 'text_content_lead';
-	$keys[] = 'title';
-	$keys[] = 'text';
-	$keys[] = 'text_title';
-	$keys[] = 'featured_title';
-	$keys[] = 'featured_text';
-	$keys[] = 'form_title';
-	$keys[] = 'form_text';
-	$keys[] = 'callout_title';
-	$keys[] = 'callout_rows_%';
-	$keys[] = 'callout_links_%';
-	$keys[] = 'featured_small_text';
-	$keys[] = 'top_button_label_1';
-	$keys[] = 'top_button_label_2';
-	$keys[] = 'cards_%';
-	$keys[] = 'carousel_%';
-
-	return $keys;
-}
-
-add_filter( 'safehaven_searchwp_custom_field_keys', 'searchwp_acf_repeater_keys' );
 
 /* ACF Autopopulate */
 function acf_load_designation_field_choices( $field ) {
@@ -222,7 +195,6 @@ function acf_load_designation_field_choices( $field ) {
         }
         
     }
-    
 
     // return the field
     return $field;
@@ -239,4 +211,35 @@ if ( ! function_exists('write_log')) {
          error_log( $log );
       }
    }
+}
+
+add_filter( 'acf/the_field/allow_unsafe_html', function( $allowed, $selector ) {
+    
+    return true;
+    
+    return $allowed;
+    
+}, 10, 2);
+
+add_action('wp_head', 'admin_bar_style_override');
+add_action('admin_head', 'admin_bar_style_override');
+
+function admin_bar_style_override() {
+	
+	if ( is_user_logged_in() ) {
+		
+		?>
+		
+		<style>
+			
+			.acf-escaped-html-notice {
+				display: none !important;
+			}
+			
+		<?php
+		
+	}
+	
+	echo "</style>";
+	
 }
