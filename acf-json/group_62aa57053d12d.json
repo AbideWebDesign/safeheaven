@@ -1,0 +1,758 @@
+{
+    "key": "group_62aa57053d12d",
+    "title": "Lost and Found",
+    "fields": [
+        {
+            "key": "field_62aa57096cc49",
+            "label": "Lost or Found",
+            "name": "lost_or_found",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Lost": "Lost",
+                "Found": "Found"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa572d6cc4a",
+            "label": "Date",
+            "name": "date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y",
+            "return_format": "F j, Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_62aa573c6cc4b",
+            "label": "Nearest City",
+            "name": "nearest_city",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Corvallis": "Corvallis",
+                "Albany": "Albany",
+                "Philomath": "Philomath",
+                "Lebanon": "Lebanon",
+                "Other": "Other"
+            },
+            "default_value": "Corvallis",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa57c86cc4d",
+            "label": "Other City",
+            "name": "other_city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62aa573c6cc4b",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa57966cc4c",
+            "label": "County",
+            "name": "county",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Benton": "Benton",
+                "Linn": "Linn",
+                "Other": "Other"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa57d76cc4e",
+            "label": "Other County",
+            "name": "other_county",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62aa57c86cc4d",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa57f36cc4f",
+            "label": "Cross Steet",
+            "name": "cross_steet",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa580a6cc50",
+            "label": "Photo",
+            "name": "photo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ".jpg, .jpeg, .png"
+        },
+        {
+            "key": "field_62aa589d6cc52",
+            "label": "Pet Type",
+            "name": "pet_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Dog": "Dog",
+                "Cat": "Cat",
+                "Other": "Other"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa58b36cc53",
+            "label": "Other Type",
+            "name": "other_type",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62aa589d6cc52",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa58596cc51",
+            "label": "Pet Name",
+            "name": "name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa59146cc54",
+            "label": "Pet Age",
+            "name": "pet_age",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Baby": "Baby",
+                "Juvenile": "Juvenile",
+                "Adult": "Adult",
+                "Senior": "Senior"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa594c6cc55",
+            "label": "Breed",
+            "name": "breed",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa595a6cc56",
+            "label": "Sex",
+            "name": "sex",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Male": "Male",
+                "Female": "Female"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa59726cc57",
+            "label": "Spayed \/ Neutered",
+            "name": "spayed_neutered",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No",
+                "Unknown": "Unknown"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa59a06cc58",
+            "label": "Microchipped",
+            "name": "microchipped",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No",
+                "Unknown": "Unknown"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa59ac6cc59",
+            "label": "Collar Description",
+            "name": "collar_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa59b66cc5a",
+            "label": "Primary Color",
+            "name": "primary_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Apricot": "Apricot",
+                "Beige": "Beige",
+                "Black": "Black",
+                "Blond": "Blond",
+                "Blue": "Blue",
+                "Blue Black": "Blue Black",
+                "Brindle": "Brindle",
+                "Bronze": "Bronze",
+                "Brown": "Brown",
+                "Buff": "Buff",
+                "Butterscotch": "Butterscotch",
+                "Charcoal": "Charcoal",
+                "Chestnut": "Chestnut",
+                "Chocolate": "Chocolate",
+                "Copper": "Copper",
+                "Cream": "Cream",
+                "Ebony": "Ebony",
+                "Fawn": "Fawn",
+                "Golden": "Golden",
+                "Green": "Green",
+                "Grey": "Grey",
+                "Lavender": "Lavender",
+                "Lilac": "Lilac",
+                "Liver": "Liver",
+                "Lynx": "Lynx",
+                "Mahogany": "Mahogany",
+                "Mustard": "Mustard",
+                "Orange": "Orange",
+                "Pink": "Pink",
+                "Red": "Red",
+                "Rust": "Rust",
+                "Sable": "Sable",
+                "Sandy": "Sandy",
+                "Seal": "Seal",
+                "Shaded Blue Cream Cameo": "Shaded Blue Cream Cameo",
+                "Silver": "Silver",
+                "Silver Black": "Silver Black",
+                "Smoke": "Smoke",
+                "Tan": "Tan",
+                "Taupe": "Taupe",
+                "Wheaten": "Wheaten",
+                "White": "White",
+                "Yellow": "Yellow"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5a306cc5b",
+            "label": "Secondary Color",
+            "name": "secondary_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Apricot": "Apricot",
+                "Beige": "Beige",
+                "Black": "Black",
+                "Blond": "Blond",
+                "Blue": "Blue",
+                "Blue Black": "Blue Black",
+                "Brindle": "Brindle",
+                "Bronze": "Bronze",
+                "Brown": "Brown",
+                "Buff": "Buff",
+                "Butterscotch": "Butterscotch",
+                "Charcoal": "Charcoal",
+                "Chestnut": "Chestnut",
+                "Chocolate": "Chocolate",
+                "Copper": "Copper",
+                "Cream": "Cream",
+                "Ebony": "Ebony",
+                "Fawn": "Fawn",
+                "Golden": "Golden",
+                "Green": "Green",
+                "Grey": "Grey",
+                "Lavender": "Lavender",
+                "Lilac": "Lilac",
+                "Liver": "Liver",
+                "Lynx": "Lynx",
+                "Mahogany": "Mahogany",
+                "Mustard": "Mustard",
+                "Orange": "Orange",
+                "Pink": "Pink",
+                "Red": "Red",
+                "Rust": "Rust",
+                "Sable": "Sable",
+                "Sandy": "Sandy",
+                "Seal": "Seal",
+                "Shaded Blue Cream Cameo": "Shaded Blue Cream Cameo",
+                "Silver": "Silver",
+                "Silver Black": "Silver Black",
+                "Smoke": "Smoke",
+                "Tan": "Tan",
+                "Taupe": "Taupe",
+                "Wheaten": "Wheaten",
+                "White": "White",
+                "Yellow": "Yellow"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5a466cc5c",
+            "label": "Color Pattern",
+            "name": "color_pattern",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Agouti": "Agouti",
+                "Badger": "Badger",
+                "Bicolor": "Bicolor",
+                "Brindle": "Brindle",
+                "Calico": "Calico",
+                "Dilute": "Dilute",
+                "Harlequin": "Harlequin",
+                "Marble": "Marble",
+                "Merle": "Merle",
+                "Mitted": "Mitted",
+                "Point": "Point",
+                "Roan": "Roan",
+                "Salt and Pepper": "Salt and Pepper",
+                "Solid": "Solid",
+                "Spotted": "Spotted",
+                "Tabby": "Tabby",
+                "Tick": "Tick",
+                "Tiger": "Tiger",
+                "Torbie": "Torbie",
+                "Tortie Lynx Point": "Tortie Lynx Point",
+                "Tortoiseshell": "Tortoiseshell",
+                "Tricolor": "Tricolor",
+                "Tuxedo": "Tuxedo",
+                "Van": "Van"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5a826cc5d",
+            "label": "Coat Qualities",
+            "name": "coat_qualities",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Short": "Short",
+                "Medium": "Medium",
+                "Long": "Long",
+                "Wavy": "Wavy",
+                "Curly": "Curly"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5aa06cc5e",
+            "label": "Tail",
+            "name": "tail",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Long": "Long",
+                "Docked": "Docked",
+                "Curly": "Curly",
+                "Short": "Short"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5abb6cc5f",
+            "label": "Paws",
+            "name": "paws",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62aa589d6cc52",
+                        "operator": "==",
+                        "value": "Cat"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Untrimmed Claws": "Untrimmed Claws",
+                "Trimmed Claws": "Trimmed Claws",
+                "Declawed": "Declawed",
+                "Polydactyl": "Polydactyl"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_62aa5ae46cc60",
+            "label": "Markings or Description",
+            "name": "description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62aa5af26cc61",
+            "label": "Contact First Name",
+            "name": "contact_first_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62aa5b166cc62",
+            "label": "Contact Last Name",
+            "name": "contact_last_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "lost_found"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655331685
+}
