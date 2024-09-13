@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 		
 		<div class="col-md-5 col-lg-4 col-xl-3">
 			
-			<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( get_field('featured_image'), 'Square - MD', false, array('class'=>'img-fluid') ); ?></a>
+			<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image( get_post_thumbnail_id(), 'Square - MD', false, array('class'=>'img-fluid') ); ?></a>
 			
 		</div>
 		
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 				
 					<div class="entry-summary">
 				
-						<?php the_field('post_excerpt'); ?>
+						<?php the_excerpt(); ?>
 						
 						<div class="mt-3">
 							

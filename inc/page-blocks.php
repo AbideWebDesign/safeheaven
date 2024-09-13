@@ -16,6 +16,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'align-left',
+			'mode'				=> 'edit',
 		));
 		// register a donation bar block
 		acf_register_block(array(
@@ -25,6 +26,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'heart',
+			'mode'				=> 'edit',
 		));
 		// register a card block
 		acf_register_block(array(
@@ -34,6 +36,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'images-alt',
+			'mode'				=> 'edit',
 		));
 		// register a featured block
 		acf_register_block(array(
@@ -43,6 +46,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'format-image',
+			'mode'				=> 'edit',
 		));
 		// register a text block
 		acf_register_block(array(
@@ -52,6 +56,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'editor-justify',
+			'mode'				=> 'edit',
 		));
 		// register a form block
 		acf_register_block(array(
@@ -79,6 +84,7 @@ function safehaven_acf_init() {
 			'render_callback'	=> 'safehaven_acf_block_render_callback',
 			'category'			=> 'formatting',
 			'icon'				=> 'heart',
+			'mode'				=> 'edit',
 		));
 	}
 }

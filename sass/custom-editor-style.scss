@@ -1,8 +1,16 @@
+:root :where(.editor-styles-wrapper)::after {
+	height: auto !important;
+}
 body {
 	.block-editor-inserter__preview-container, #tab-panel-0-patterns, .block-editor-inserter__tips, .edit-post-post-link__preview-label, .editor-post-link p, .editor-page-attributes__order, .block-editor-post-preview__dropdown, .table-of-contents, .components-editor-notices__dismissible,.components-editor-notices__dismissible .components-notice, .components-editor-notices__pinned .components-notice, input[id^="block-editor-inserter__search-"]:placeholder-shown+.block-editor-inserter__results .components-panel__body:first-of-type, .block-editor-inserter__menu-help-panel{
 		display: none !important;
 	}
-	
+	.editor-post-panel__section .components-panel__row .dp-editor-post-copy-to-draft{
+		outline: 1px solid #037FB6;
+	}
+	.dp-editor-post-rewrite-republish {
+		display: none;
+	}
 	.block-editor-block-navigation__item-button:focus:not(:disabled):not([aria-disabled=true]) {
 		outline: none;
 	}

@@ -73,6 +73,4 @@ get_header();
 
 <?php endwhile; // end of the loop. ?>
 
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f3d647eedfbf554"></script>
-
 <?php get_footer();

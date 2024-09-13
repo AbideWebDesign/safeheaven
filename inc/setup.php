@@ -42,7 +42,7 @@ add_image_size( 'Square - MD', 433, 433, true );
 /**
  * Adds a custom read more link to all excerpts, manually or automatically generated
  */
-add_filter( 'wp_trim_excerpt', 'safehaven_all_excerpts_get_more_link' );
+//add_filter( 'wp_trim_excerpt', 'safehaven_all_excerpts_get_more_link' );
 
 if ( ! function_exists( 'safehaven_all_excerpts_get_more_link' ) ) {
 	

@@ -114,9 +114,9 @@
 						
 							<div class="mb-4">
 								
-								<a href="<?php echo get_the_permalink($post); ?>">
+								<a href="<?php echo get_the_permalink( $post ); ?>">
 									
-									<?php echo wp_get_attachment_image( get_field('featured_image', $post), 'Square - MD', false, array('class'=>'rounded-circle img-card img-fluid m-auto') ); ?>
+									<?php echo wp_get_attachment_image( get_post_thumbnail_id( $post ), 'Square - MD', false, array('class'=>'rounded-circle img-card img-fluid m-auto') ); ?>
 							
 								</a>
 									
