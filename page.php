@@ -25,7 +25,7 @@ global $post;
 
 	<?php endwhile; // end of the loop. ?>
 	
-	<?php echo get_template_part('template-parts/blocks/content', 'adoption-embed'); ?>
+	<?php get_template_part('template-parts/blocks/content', 'adoption-embed'); ?>
 
 </div><!-- #page-wrapper -->
 

@@ -20,6 +20,38 @@
 		
 	</div>
 	
+	<div class="wrapper wrapper-featured">
+		
+		<div class="container">
+		
+			<div class="row justify-content-center mb-4 mb-lg-0">
+									
+				<div class="col-md-12 col-lg-auto align-self-center text-center text-lg-left">
+									
+					<h2>Meet Rex</h2>
+										
+					<p>Rex is our longest term resident!</p>
+									
+					<div class="d-flex mt-4 justify-content-center justify-content-lg-start">
+																										
+						<a href="https://safehavenhumane.org/adopt/animals/53833501/" class="btn btn-primary mr-2">Learn More</a>					
+				
+					</div>
+											
+				</div>
+				
+				<div class="col-md-7 col-lg-auto">
+						
+					<img src="https://safehavenhumane.org/wp-content/uploads/2024/09/Rex-featured-story.jpeg" class="rounded-circle img-fluid" />
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
 	<?php if ( get_field('adoption_bottom_title', 'options') || get_field('adoption_bottom_text', 'options') ): ?>
 	
 		<div class="wrapper wrapper-featured bg-dark">
