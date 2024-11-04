@@ -20,29 +20,35 @@
 		
 	</div>
 	
-	<div class="wrapper wrapper-featured">
+	<?php if ( get_field('pet_tango_id') ): ?>
 		
-		<div class="container">
+		<?php $animal_id = get_field('pet_tango_id'); ?>
 		
-			<div class="row justify-content-center mb-4 mb-lg-0">
-									
-				<div class="col-md-12 col-lg-auto align-self-center text-center text-lg-left">
-									
-					<h2>Meet Rex</h2>
+		<div class="wrapper wrapper-featured">
+			
+			<div class="container">
+			
+				<div class="row justify-content-center mb-4 mb-lg-0">
 										
-					<p>Rex is our longest term resident!</p>
-									
-					<div class="d-flex mt-4 justify-content-center justify-content-lg-start">
-																										
-						<a href="https://safehavenhumane.org/adopt/animals/53833501/" class="btn btn-primary mr-2">Learn More</a>					
-				
-					</div>
+					<div class="col-md-12 col-lg-auto align-self-center text-center text-lg-left">
+										
+						<h2><?php the_field('name'); ?></h2>
 											
-				</div>
-				
-				<div class="col-md-7 col-lg-auto">
+						<p><?php the_field('description'); ?></p>
+										
+						<div class="d-flex mt-4 justify-content-center justify-content-lg-start">
+																											
+							<a href="https://safehavenhumane.org/adopt/animals/<?php echo $animal_id; ?>" class="btn btn-primary mr-2">Learn More</a>					
+					
+						</div>
+												
+					</div>
+					
+					<div class="col-md-7 col-lg-auto">
 						
-					<img src="https://safehavenhumane.org/wp-content/uploads/2024/09/Rex-featured-story.jpeg" class="rounded-circle img-fluid" />
+						<?php echo wp_get_attachment_image( get_field('image'), 'medium', false, array( 'class' => 'rounded-circle img-fluid' ) ); ?>
+												
+					</div>
 					
 				</div>
 				
@@ -50,7 +56,7 @@
 			
 		</div>
 		
-	</div>
+	<?php endif; ?>
 	
 	<?php if ( get_field('adoption_bottom_title', 'options') || get_field('adoption_bottom_text', 'options') ): ?>
 	

@@ -6,6 +6,7 @@
             "key": "field_60f1ff1e91be6",
             "label": "Image",
             "name": "animal_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_60f1feaa91be1",
             "label": "Name",
             "name": "animal_name",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -49,6 +51,7 @@
             "key": "field_60f1feb391be2",
             "label": "Type",
             "name": "animal_type",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -75,6 +78,7 @@
             "key": "field_60f1feed91be3",
             "label": "Sex",
             "name": "animal_sex",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -100,6 +104,7 @@
             "key": "field_60f1feff91be4",
             "label": "Adoption Date",
             "name": "adoption_date",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -119,6 +124,7 @@
             "key": "field_60f1ff0791be5",
             "label": "Story",
             "name": "adoption_story",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -133,6 +139,27 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_66edf8c9b5b62",
+            "label": "Sponsored",
+            "name": "sponsored",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -152,5 +179,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1626711274
+    "show_in_rest": 0,
+    "modified": 1726871774
 }
