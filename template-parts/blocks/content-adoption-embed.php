@@ -24,13 +24,13 @@
 		
 		<?php $animal_id = get_field('pet_tango_id'); ?>
 		
-		<div class="wrapper wrapper-featured">
+		<div class="wrapper wrapper-featured bg-light">
 			
 			<div class="container">
 			
 				<div class="row justify-content-center mb-4 mb-lg-0">
 										
-					<div class="col-md-12 col-lg-auto align-self-center text-center text-lg-left">
+					<div class="col-md-12 col-lg-8 align-self-center text-center text-lg-left order-1 order-lg-0">
 										
 						<h2><?php the_field('name'); ?></h2>
 											
@@ -44,7 +44,7 @@
 												
 					</div>
 					
-					<div class="col-md-7 col-lg-auto">
+					<div class="col-auto order-0 order-lg-1 mb-3 mb-lg-0 text-center">
 						
 						<?php echo wp_get_attachment_image( get_field('image'), 'medium', false, array( 'class' => 'rounded-circle img-fluid' ) ); ?>
 												
