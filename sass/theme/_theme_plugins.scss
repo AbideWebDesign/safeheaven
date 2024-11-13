@@ -102,10 +102,9 @@ body {
 				}
 			}
 			.ginput_card_field {
-				@extend .form-control;
-				height: calc(1.5em + 1.5rem + 2px);
-				padding: 0.75rem 1rem;
-				font-size: 1.25rem;
+				height: 55px !important;
+				padding: 0.75rem 1rem !important;
+				font-size: 1.25rem !important;
 				line-height: 1.5;
 				border-radius: 0.3rem;
 			}
