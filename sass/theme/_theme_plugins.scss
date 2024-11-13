@@ -96,9 +96,29 @@ body {
 			.ginput_cardextras {
 				display: flex;
 				
+				@include media-breakpoint-down(sm) {
+					justify-content: space-between;
+				}
+				
 				.ginput_cardinfo_left {
 					display: block;
 					width: 25%;
+					
+					@include media-breakpoint-down(sm) {
+						width: 48%;
+					}
+				}
+				.ginput_cardinfo_right {
+					@include media-breakpoint-down(sm) {
+						width: 48%;
+						
+						.ginput_card_security_code_icon {
+							display: none;
+						}
+						.gform-field-label--type-sub {
+							padding-top: 7px;
+						}
+					}					
 				}
 			}
 			.ginput_card_field {
@@ -108,6 +128,11 @@ body {
 				line-height: 1.5;
 				border-radius: 0.3rem;
 			}
+		}
+		.gform_ppcp_smart_payment_buttons {
+			display: flex;
+			justify-self: center;
+			margin-right: 0;
 		}
 		.validation_error, .gfield_description.validation_message {
 			@extend .alert;
