@@ -61,7 +61,7 @@ body {
 			 margin-bottom: 0;
 			}
 		}
-		.StripeElement, input[type="email"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="week"], input[type="url"] {
+		.StripeElement, input[type="email"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="week"], input[type="url"], .gform_ppcp_payment_method select {
 			@extend .form-control;
 			@extend .form-control-lg;
 			width: 100%;
@@ -182,7 +182,7 @@ body {
 			border-top-right-radius: .3rem;
 			border-bottom-right-radius: .3rem;
 		}
-		.address_country select, .address_state select {
+		.address_country select, .address_state select, .gform_ppcp_payment_method select {
 			@extend .custom-select;
 			@extend .custom-select-lg;
 		}
