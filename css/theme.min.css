@@ -4232,6 +4232,8 @@ hr { border-top-width: 2px; }
 
 .wrapper-footer-top .gform_wrapper { margin: 0; }
 
+.wrapper-footer-top .gform_wrapper .gform_heading { display: none; }
+
 .wrapper-footer-top .gform_wrapper .gform_body ul { margin: 0; }
 
 .wrapper-footer-top .gform_wrapper .gform_body ul li { margin: 0; padding: 0; }
