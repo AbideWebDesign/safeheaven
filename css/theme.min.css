@@ -3892,6 +3892,13 @@ a.skip-link { position: fixed; z-index: 1000; top: 0px; right: 0px; }
 
 .gallery-caption { display: block; }
 
+/* Gravity */
+#field_3_1 { text-align: left; }
+
+#field_3_2 { display: none; }
+
+#gform_submit_button_3 { background-color: #D1D3D4; color: #B01E3A; }
+
 /* Shiftnav */
 body .shiftnav:after { display: none; }
 
