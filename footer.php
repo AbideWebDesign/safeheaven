@@ -26,9 +26,13 @@ defined( 'ABSPATH' ) || exit;
 			
 			<div class="col-lg-auto flex-grow-1 align-self-center text-center mb-4 mb-lg-0">
 				
-				<?php $form = get_field('footer_top_form', 'options'); ?>
-				
-				<?php echo do_shortcode( '[gravityform id="' . $form  . '" title="false" description="false" ajax="true"]' ); ?>
+				<div class="d-flex align-self-center">
+					
+					<?php $form = get_field('footer_top_form', 'options'); ?>
+					
+					<?php echo do_shortcode( '[gravityform id="' . $form  . '" title="false" description="false" ajax="true"]' ); ?>
+					
+				</div>
 				
 			</div>
 			
