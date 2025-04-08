@@ -444,11 +444,15 @@ hr {
 
 /* Footer */
 .wrapper-footer-top {
+	.gform-theme--foundation .gform_fields {
+		row-gap: 10px;
+	}
 	.gform_confirmation_message_3 {
 		color: white;
 	}
 	.gform_wrapper {
 		margin: 0;
+		width: 100%;
 		
 		.gform_heading {
 			display: none;

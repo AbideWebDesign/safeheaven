@@ -4228,9 +4228,11 @@ hr { border-top-width: 2px; }
 @media (max-width: 1199.98px) { #navbarNavDropdown { margin: 0 -15px; border-top: 1px solid #202833; } #navbarNavDropdown .dropdown-menu.show { border: none; background-color: #6F797A; } #navbarNavDropdown .dropdown-menu.show .dropdown-item { color: white; } #navbarNavDropdown .nav-link { border-bottom: 1px solid #dee2e6; padding: 1rem; } }
 
 /* Footer */
+.wrapper-footer-top .gform-theme--foundation .gform_fields { row-gap: 10px; }
+
 .wrapper-footer-top .gform_confirmation_message_3 { color: white; }
 
-.wrapper-footer-top .gform_wrapper { margin: 0; }
+.wrapper-footer-top .gform_wrapper { margin: 0; width: 100%; }
 
 .wrapper-footer-top .gform_wrapper .gform_heading { display: none; }
 
