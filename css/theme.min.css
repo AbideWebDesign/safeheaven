@@ -4039,7 +4039,7 @@ h3 .searchwp-highlight, .tribe-common--breakpoint-medium.tribe-common .tribe-com
 
 .awaiting-sn-on-hold { background-color: #ccaa34; }
 
-.medical-treatment { background-color: #4958c9; }
+.medical-treatment, .in-surgery { background-color: #4958c9; }
 
 .on-hold, .stray-hold { background-color: #B01E3A; }
 
