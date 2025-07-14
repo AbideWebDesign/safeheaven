@@ -69,21 +69,13 @@ if ( empty( $disable_event_search ) ) {
 					<?php $this->template( 'components/data' ); ?>
 			
 					<?php $this->template( 'components/before' ); ?>
-
-					<?php //$this->template( 'components/events-bar' ); ?>
-					
-					<?php //$this->template( 'list/top-bar' ); ?>
-	
 					
 					<div class="tribe-events-calendar-list pt-md-4">
-						
 	
 						<?php $this->template( 'components/messages' ); ?>
 			
 						<?php $this->template( 'components/breadcrumbs' ); ?>
-	
-	
-			
+				
 						<?php foreach ( $events as $event ) : ?>
 						
 							<?php $this->setup_postdata( $event ); ?>
@@ -95,10 +87,7 @@ if ( empty( $disable_event_search ) ) {
 						<?php endforeach; ?>
 	
 					</div>
-	
-	
-					<?php //$this->template( 'list/nav' ); ?>
-	
+		
 					<?php $this->template( 'components/after' ); ?>
 					
 					<?php $this->template( 'components/breakpoints' ); ?>
